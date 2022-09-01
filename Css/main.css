@@ -1,0 +1,744 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x:hidden ;
+}
+.head{
+    overflow: auto;
+}
+.head .nav{
+width: 100%;
+height: 40px;
+padding: 20px;
+position: fixed;
+display: flex;
+justify-content: space-between;
+z-index: 8000;
+box-shadow: 5px 10px 8px #8888;
+background-color: white;
+}
+.head .nav ul{
+    padding: 10px;
+    width: 50%;
+    display: flex;
+   justify-content: space-around;   
+   list-style-type: none;
+   padding-right:120px ;
+}
+.head .nav .logo{
+  margin-left:100px;
+}
+.head .nav ul li a{
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.head .nav ul li a:hover{
+    color: #F3A202;
+}
+.head .nav ul li .home{
+    color: #F3A202;
+}
+.head .nav ul li .App{
+border-radius: 100px;
+border: 2px  #F3A202 solid;
+padding: 11px 25px;
+color: black;
+font-size: 17px;
+font-weight:500;
+}
+.head .nav ul li .App i{
+    padding-left: 10px;
+    color: #F3A202;
+}
+.head .nav ul li .App:hover{
+    color: white;
+    background-color:#F3A202 ;
+}
+a{
+text-decoration: none;
+}
+.Home{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+.Home .content{
+padding-top: 200px;
+padding-left: 110px;
+width: 40%;
+height: 600px;
+}
+.Home .content h1{
+font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.Home .content p{
+font-size:25px;
+font-family: Arial, Helvetica, sans-serif;
+color: rgba(0, 0, 0, .5);
+font-weight: 500;
+padding: 30px 0px 70px 0px;
+}
+.Home .content a{
+margin-top: 50px;
+border-radius: 100px;
+background-color: #F3A202;
+border: 0px;
+padding: 14px 33px;
+color: white;
+font-size: 18px;
+font-weight:500;
+font-weight: bold;
+transition: all .4s;
+font-family: Arial, Helvetica, sans-serif;
+}
+.Home .content a:hover{
+    background-color: #73c5eb;
+}
+.Home .banner{
+width: 30%;
+height: 490px;
+background-image: url(../images/shokran.png);
+background-size:contain;
+background-repeat: no-repeat;
+animation-name: animate;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+z-index: 500;
+position: absolute;
+left:950px;
+
+}
+.clients{
+    background:rgb(240, 240, 240);
+    padding-top: 20px;
+
+}
+.clients .bar{
+    width: 85%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around; 
+}
+.clients .bar img{
+width: 100px;
+height: 100px;
+filter: grayscale();
+}
+.clients .bar img:hover{
+    filter: none;
+    transition: all 1s;
+    transform: scale(1.1);
+}
+.clients .bar .special{
+    padding-top: 35px;
+    height: 50px;  
+}
+.content1{
+   margin-top: 50px;
+   height: 83vh; 
+}
+.header{
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+}
+.header h1{
+    padding-bottom:15px;
+    padding-top: 15px;
+    text-align: center;
+    font-family: 'Jost', sans-serif; 
+   font-size: 35px;  
+    color:  rgba(38, 60, 97, 0.9);
+}
+.header h1::before{
+    content: "";
+    width: 8%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, .1);
+    position: absolute;
+    top:100%;
+    left:780px ;
+}
+.header h1::after{
+    content: "";
+    width: 3%;
+    height: 2px;
+    background-color:  #F3A202;
+    position: absolute;
+    top:100%;
+    left:820px ;
+}
+.header p{
+    font-size: 20px;
+    font-family: 'Jost', sans-serif; 
+    color: rgba(0, 0, 0, .5);
+    padding:20px 100px;
+}
+.content1 .body{
+    display: flex;
+    justify-content: space-around;
+}
+.content1 .body .right{
+width: 50%;
+}
+.content1 .body .right p{
+font-size: 20px;
+font-family: 'Jost', sans-serif; 
+padding: 0px 80px 40px 35px;
+color: rgba(0, 0, 0, .5);
+}
+.content1 .body .right a{
+    margin:35px;
+    border-radius: 5px;
+    border:2px solid #F3A202;
+    background-color: white;
+    padding: 16px 45px;
+    color: #F3A202;
+    font-size: 15px;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content1 .body .right a:hover{
+background-color: #F3A202;
+color: white;
+}
+.content1 .body .right button i{
+padding-right: 10px;
+}
+.content1 .body .left{
+width: 40%;
+height: 60vh;
+margin-left: 100px;
+}
+.content1 .body .left img{
+width:97%;
+height: 88%;
+}
+.content2{
+    width: 100%;
+    height: 50vh;
+}
+ul{
+    list-style-type: none;
+}
+.content2 .body{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.content2 .body .left{
+    width: 40%;
+    padding-left: 120px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content2 .body .left p{
+    width: 100%;
+    font-size: 19px;
+    color: rgba(0, 0, 0, .6);
+    line-height: 1.2;
+}
+.content2 .body ul{
+    width: 90%;
+}
+.content2 .body ul li{
+    color: rgba(0, 0, 0, .6);
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.content2 .body ul li i{
+padding-right: 10px;
+color: #F3A202;
+}
+.content2 .body .right{
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content2 .body .right p{
+width: 85%;
+padding-left:30px;
+font-size: 19px;
+color: rgba(0, 0, 0, .6);
+line-height: 1.2;
+padding-bottom:30px ;
+}
+.content2 .body .right a{
+    text-align: center;
+    border-radius: 6px;
+    border:2px solid #F3A202;
+    background-color: white;
+    padding: 12px 43px;
+    color: #F3A202;
+    font-size: 17px;
+    font-weight:bold;
+    margin-left: 30px;
+}
+.content2 .body .right a:hover{
+background-color: #F3A202;
+color: white;
+}
+.content3{
+    width: 100%;
+height:1200px;
+background:rgb(240, 240, 240)
+}
+.content3 .body {
+    width: 93%;
+    position: relative;
+}
+.content3 .body div{
+    width:29%;
+    float: right;
+    height: 300px;
+    position: relative;
+    padding: 10px;
+}
+.content3 .body div img:hover{
+    margin-top: 10px;
+}
+.content3 .body div h1{
+position: absolute;
+top:20%;
+background-color: #F3A202;
+width: 95.7%;
+text-align: center;
+height: 50px;
+padding: 10px 0px;
+color: white;
+font-size: 35px;
+}
+.content3 .body div img{
+width: 100%;
+height: 300px;
+margin-top: 30px;
+border-radius: 20px;
+transition: all .5s;
+}
+.brands{
+    height: 70vh;
+}
+.brands .header h1::after{
+    top:40%;
+}
+.brands .header h1::before{
+    top:40%;
+}
+.brands .body{
+    margin: auto;
+    width: 80%;
+display: flex;
+justify-content: space-around;
+}
+.contact{
+    margin-top:100px;
+    height: 1000px;
+}
+.contact .body{
+    display: flex;
+    justify-content: space-around;
+}
+.contact .body .left{
+    width: 50%;
+    height: 600px;
+}
+.contact .body .left img{
+    width: 100%;
+    height: 100%;
+    }
+.contact .body .right{
+    width: 50%;
+    box-shadow: 12px 0 15px -4px rgba(0, 0, 0, .2), -12px 0 8px -4px rgba(0, 0, 0, .2);
+    margin-left: 30px;
+    padding: 30px 0px 0px 30px;
+    border-top: 3px solid #F3A202;
+    border-bottom: 3px solid #F3A202;
+}
+.contact .body .right div{
+    width:45%;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+.contact .body .right  input{
+height: 40px;
+width: 95%;
+border-radius:5px ;
+border-color: rgba(0, 0, 0, .1); 
+margin-top: 10px;
+margin-bottom: 20px;
+}
+.contact .body .right .message{
+    width: 100%; 
+}
+textarea{
+    width: 95%;
+    height: 250px;
+    border-radius:5px ;
+    border-color: rgba(0, 0, 0, .1); 
+    margin-top: 10px;
+}
+.contact .body .right .email{
+    float: right;
+}
+
+.contact .body .right button{
+    border-radius: 25px;
+    border:0px;
+    background-color: #F3A202;
+    padding: 15px 43px;
+    color: white;
+    font-size: 17px;
+    font-weight:bold;
+    margin-left: 220px;
+    transition: all .4s;
+
+}
+.contact .body .right button:hover{
+    background-color: #73c5eb;
+
+}
+.social{
+    width:90%;
+    height: 200px;
+    text-align: left;
+    padding-left: 150px;}
+.social h1{
+    font-family: 'Jost', sans-serif; 
+    font-size: 18px;
+    color: #37517e;
+    margin-bottom: 20px;
+}
+.social p{
+font-family: Arial, Helvetica, sans-serif;
+color: rgba(0, 0, 0, .8);
+margin-bottom: 15px;
+}
+.social ul{
+display: flex;
+}
+.social ul a li {
+padding: 13px;
+border-radius: 100%;
+background-color: #F3A202;
+margin: 5px;
+transition: all .4s;
+}
+.social ul li i{
+color: white;
+font-size: 15px;
+}
+.social ul a li:hover{
+    background-color: #73c5eb;
+}
+.footer{
+    width:96.4%;
+    height: 100px;
+    text-align: left;
+    padding-left: 60px;
+    padding-top: 30px;
+    background-color: #37517e;
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+.footer .left{
+    width:30%;
+}
+.footer .left p{
+    padding: 3px;
+}
+.footer .right{
+    margin-left: 150px;
+}
+.footer .right p{
+    padding: 3px;
+    font-weight: lighter;
+}
+.footer .right p a{
+color: #F3A202;
+transition: all .4s;
+}
+.footer .right p a:hover{
+color:  #73c5eb;
+}
+
+@keyframes animate{
+  0%{
+    top:60px;  
+    }
+    50%{
+        top:100px;
+    }
+    100%{
+        top:60px; 
+    }
+  }
+  @media(max-width:750px) {
+    .head .nav ul{
+       display: none;
+    }
+    .head .nav .logo{
+      margin-left:20px;
+    }
+    .Home{
+        height: 750px;
+        display: block;
+        width: 95%;
+    }
+    .Home .content{
+    padding-top: 500px;
+    padding-left:20px;
+    padding-right:20px;
+    width: 90%;
+    text-align: center;
+    }
+    .Home .content h1{
+    font-size: 25px;
+    }
+    .Home .content p{
+    font-size:15px;
+    }
+    .Home .banner{
+    width: 90%;
+    position: absolute;
+    left:10px;
+    }
+    .clients{
+        width: 99%;
+    }
+    .clients .bar{
+        width: 95%;
+        height: 400px;
+        margin: 0;
+        display: inline-block;
+        padding-left: 20px;
+        }
+    .clients .bar div{
+    display: inline;
+    margin: 26px;
+    width: 100%;
+    height: 500px;
+    
+    }
+    .clients .bar .special{
+        margin-top: 30px;
+        width: 100px;
+        height: 50px;  
+    }
+    .content1{
+        margin-top: 30px;
+        height:750px;
+        width:99%; 
+     }
+     .header{
+         margin-bottom: 50px;
+     }
+     .header h1::before{
+         width: 40%;
+         position: absolute;
+         top:100%;
+         left:120px;
+     }
+     .header h1::after{
+         width: 10%;
+         position: absolute;
+         top:100%;
+         left:185px ;
+     }
+     .header p{
+         font-size: 20px;
+         font-family: 'Jost', sans-serif; 
+         color: rgba(0, 0, 0, .5);
+         padding:20px 100px;
+     }
+     .content1 .body{
+         display: block;
+     }
+     .content1 .body .right{
+     width: 100%;
+     }
+     .content1 .body .right p{
+     padding: 20px;
+     margin-bottom: 10px;
+     }
+     .content1 .body .right a{
+         margin:23px;
+     }
+     .content1 .body .left{
+     width: 97%;
+     height: 45vh;
+     margin: 10px;
+     }
+     .content1 .body .left img{
+     width:95%;
+     height: 300px;
+     }
+     .content2{
+        width: 98%;
+        height:700px;
+    }
+    .content2 .body{
+        width: 100%;
+        display: block;
+    }
+    .content2 .body .left{
+        width: 90%;
+        padding: 20px;
+    }
+    .content2 .body .left p{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .content2 .body ul li{
+        font-size: 16px;
+    }
+    .content2 .body .right{
+        width: 100%;
+    }
+    .content2 .body .right p{
+    width: 90%;
+    padding:20px;
+    font-size: 17px;
+    margin-bottom: 10px;
+    }
+    .content2 .body .right a{
+        margin-left: 20px;
+    }
+    .content3{
+    width: 100%;
+    height:3050px;
+    }
+    .content3 .body div{
+        width:100%;
+        float: none;
+    }
+    .content3 .body div h1{
+    width: 94.7%;
+    }
+    .brands{
+        height: 1300px;
+        width: 98%;
+    }
+    .brands .header p{
+      width: 78%;
+      padding: 50px;
+    }
+    .brands .header h1::after{
+        top:25%;
+        width:10%;
+        left:190px;
+    }
+    .brands .header h1::before{
+        top:25%;
+        width: 30%;
+        left:150px ;
+    }
+    .brands .body{
+        margin: auto;
+        width: 90%;
+    display: block;
+    }
+    .brands .body div{
+        width:65%;
+        padding: 70px;
+    }
+    .contact{
+        margin-top:30px;
+        height: 1800px;
+    }
+    .contact .body{
+        display: block;
+    }
+    .contact .body .left{
+        width: 75%;
+        height: 300px;
+    }
+    .contact .body .left img{
+        width: 100%;
+        height: 300px;
+        }
+    .contact .body .right{
+        width: 98%;
+        height: 930px;
+        margin-left:0px;
+        display: block;
+        padding: 0px 0px 0px 0px;
+        box-shadow: 12px 0 15px -4px rgba(0, 0, 0, .2), -12px 0 8px -4px rgba(0, 0, 0, .2);
+    }
+    .contact .body .right  div{
+        width:75%;
+        display: block;
+        margin-bottom: 0px;
+        padding-left: 20px;
+        font-size: 17px;  
+    }
+    .contact .body .right  input{
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+    }
+    .contact .body .right .message{
+        width: 80%; 
+    }
+    textarea{
+        width: 290px;
+        height: 250px;
+        border-radius:5px ;
+        border-color: rgba(0, 0, 0, .1); 
+        margin-top: 10px;
+    }
+    .contact .body .right .email{
+        float: none;
+    }
+    .contact .body .right button{
+        padding: 15px 20px;
+        margin-left:90px;
+        margin-top:5px;
+    }
+    .social{
+        width: 88%;
+        padding-left: 40px;
+    }
+    .social h1{
+        font-size: 20px;
+        margin-top: 60px;
+    }
+    .footer{
+        width:100%;
+        height: 280px;
+        padding-left: 10px;
+        padding-top: 30px;
+        display: block;
+        font-size: 17px;
+        text-align: center;
+    }
+    .footer .left{
+        width:95%;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+    .footer .right{
+width: 95%;
+    }
+    .footer .left p{
+        padding: 3px;
+    }
+    .footer .right{
+        margin-left: 0px;
+    }
+    .footer .right p{
+        font-weight: lighter;
+    }
+  }
